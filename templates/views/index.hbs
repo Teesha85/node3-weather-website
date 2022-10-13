@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/img/Tab_Icon.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        
+    </head>
+
+    <body>
+        <div class="main-content"> 
+            {{>header}}
+            <p> Use this site to get your weather</p>
+
+            <form> 
+                <input placeholder ="Location">
+                <button>Search</button>
+            </form>
+
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+        
+        
+        {{>footer}}
+        <!--Moved the script for app.js down here, because calling it in the head was causing it to run too early 
+             This allows for the users to submit the form and then run the script (which has the event listener).-->
+        <script src="/js/app.js"></script>
+    </body>
+</html>
