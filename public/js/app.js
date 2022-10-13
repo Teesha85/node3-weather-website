@@ -25,7 +25,7 @@ weatherForm.addEventListener("submit", (e) => {
       } else {
         // show location in paragraph 1 & forcast info in 2nd paragraph
         messageOne.textContent = data.location;
-        messageTwo.textContent = `Current Temp: ${data.forcast.currentTemp}. Feels Like Temp: ${data.forcast.feelslikeTemp}. Weather Description: ${data.forcast.weatherDescription}. Current Humidity: ${data.forcast.currentHumidity} `;
+        messageTwo.textContent = `Current Temp: ${data.forcast.currentTemp}. Feels Like Temp: ${data.forcast.feelslikeTemp}. Weather Description: ${data.forcast.weatherDescription}. Current Humidity: ${data.forcast.currentHumidity} %`;
       }
     });
   });
