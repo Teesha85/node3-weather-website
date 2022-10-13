@@ -24,6 +24,7 @@ const forecast = (GeoLongitude, GeoLatitude, callback) => {
         currentTemp: body.current.temperature,
         feelslikeTemp: body.current.feelslike,
         weatherDescription: body.current.weather_descriptions[0],
+        currentHumidity: body.current.humidity,
       });
     }
   });
